@@ -40,6 +40,7 @@ from tensorflow.keras.datasets import cifar10
 
 ## Project Structure
 
+```
 cnn-cifar10-classifier/
 │── data/
 │ ├── processed/
@@ -63,6 +64,7 @@ cnn-cifar10-classifier/
 │── .gitignore
 │── README.md
 │── requirements.txt
+```
 
 ## Jupyter Notebooks
 
