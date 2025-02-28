@@ -9,6 +9,7 @@ This repository contains a **Convolutional Neural Network (CNN)** trained to cla
 - [Project Structure](#project-structure)
 - [Jupyter Notebooks](#jupyter-notebooks)
 - [Installation](#installation)
+- [Pretrained Model](#pretrained-model)
 - [Training the Model](#training-the-model)
 - [Model Performance](#model-performance)
 - [References](#references)
@@ -42,13 +43,13 @@ from tensorflow.keras.datasets import cifar10
 
 ```
 cnn-cifar10-classifier/
-│── data/
+│── data/ (ignored in .gitignore)
 │ ├── processed/
 │ ├── test/ # Preprocessed test images
 │ ├── train/ # Preprocessed training images
 │ ├── val/ # Preprocessed validation images
-│── models/
-│ ├── best_model.keras # Trained CNN model (ignored in .gitignore)
+│── models/ (ignored in .gitignore)
+│ ├── best_model.keras # Trained CNN model
 │── notebooks/
 │ ├── 01_eda.ipynb # Exploratory Data Analysis
 │ ├── 02_preprocessing.ipynb # Data Preprocessing
@@ -85,6 +86,26 @@ To set up the environment, clone the repository and install the required package
 git clone https://github.com/GustavoGomes7/cnn-cifar10-classifier.git
 cd cnn-cifar10-classifier
 pip install -r requirements.txt
+```
+
+## Pretrained Model
+
+A pretrained version of this model is available on **Hugging Face Hub**:  
+[VisionNet-CIFAR10 on Hugging Face](https://huggingface.co/GustavoGomes7/VisionNet-CIFAR10)
+
+To download and use the pretrained model, run:
+
+```python
+from huggingface_hub import hf_hub_download
+from tensorflow.keras.models import load_model
+
+# Download model from Hugging Face
+model_path = hf_hub_download(repo_id="GustavoGomes7/VisionNet-CIFAR10", filename="best_model.keras")
+
+# Load model
+model = load_model(model_path)
+
+print("Model loaded successfully!")
 ```
 
 ## Training the Model
