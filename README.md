@@ -83,7 +83,7 @@ This project follows a structured deep learning workflow, divided into four key 
 To set up the environment, clone the repository and install the required packages:
 
 ```python
-git clone https://github.com/GustavoGomes7/cnn-cifar10-classifier.git
+git clone https://github.com/Gomes-Gustavo/cnn-cifar10-classifier.git
 cd cnn-cifar10-classifier
 pip install -r requirements.txt
 ```
@@ -130,6 +130,12 @@ python src/train.py
 
 - TensorFlow/Keras Documentation: https://www.tensorflow.org/
 - CIFAR-10 Dataset: https://www.cs.toronto.edu/~kriz/cifar.html
+
+## Author
+
+Developed by Gustavo Gomes
+
+- [LinkedIn](https://www.linkedin.com/in/gustavo-gomes-581975333/)
 
 ## Author
 
