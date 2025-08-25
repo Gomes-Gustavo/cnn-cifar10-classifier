@@ -135,5 +135,5 @@ python src/train.py
 
 Developed by Gustavo Gomes
 
-- [LinkedIn](https://www.linkedin.com/in/gustavo-gomes-581975333/)
+- [LinkedIn](https://www.linkedin.com/in/gustavo-alves-gomes/)
 - [gustavo.agomes@outlook.com](mailto:gustavo.agomes@outlook.com)
